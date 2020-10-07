@@ -6,6 +6,12 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { GioithieuComponent } from './gioithieu/gioithieu.component';
+import { TintucComponent } from './tintuc/tintuc.component';
+import { BlogComponent } from './blog/blog.component';
+import { CtblogComponent } from './ctblog/ctblog.component';
+import { CttintucComponent } from './cttintuc/cttintuc.component';
+import { VanbanComponent } from './vanban/vanban.component';
+import { TochucComponent } from './tochuc/tochuc.component';
 
 export const mainRoutes: Routes = [
   {
@@ -16,13 +22,25 @@ export const mainRoutes: Routes = [
         },
         {
             path: 'gioi-thieu', component: GioithieuComponent
-        }
+        },
+        {
+          path: 'tin-tuc', component: TintucComponent
+        },
+        {
+          path: 'blog', component: BlogComponent
+        },
+        {
+          path: 'ctblog', component: CtblogComponent
+        },
+        {
+          path: 'ct-tintuc', component: CttintucComponent
+        },
       ]
   }
 ];
 
 @NgModule({
-  declarations: [MainComponent, HomeComponent, HeaderComponent, FooterComponent, GioithieuComponent],
+  declarations: [MainComponent, HomeComponent, HeaderComponent, FooterComponent, GioithieuComponent, TintucComponent, BlogComponent, CtblogComponent, CttintucComponent, VanbanComponent, TochucComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(mainRoutes)

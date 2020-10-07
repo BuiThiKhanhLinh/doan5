@@ -163,9 +163,11 @@ a.rm_btn{
 }
 .key_to_success_area, .key_to_success_area .container, .key_to_success_area .container .row, .key_to_success_area .container .row .key_to_success {
     height: 100%;
+
 }
 .key_to_success_area .container .row .key_to_success .col-md-7,.key_to_success_area .container .row .key_to_success .col-md-5{
     height: 100%;
+
 }
 .section_heading{
     text-align: center;
@@ -285,7 +287,7 @@ Header CSS
 }
 .logo a{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 650px;
     text-transform: uppercase;
     line-height: 73px;
 }
@@ -364,7 +366,7 @@ Key To Success CSS
     background: url(img/bg_header_bottom.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 800px;
     margin-top: -123px;
 }
 .key_to_success{
@@ -995,7 +997,7 @@ Our Degrees CSS
 }
 .our_degrees_txt {
   margin-right: 70px;
-  margin-top: 116px;
+  /* margin-top: 116px; */
 }
 .our_degrees_txt h2{
     font-size: 32px;
