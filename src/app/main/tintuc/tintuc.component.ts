@@ -17,12 +17,20 @@ export class TintucComponent extends BaseComponent implements OnInit {
 
   ngOnInit(): void {
     Observable.combineLatest(
-      this._api.get('/api/lop/get-all'),
+      this._api.get('api/tintuc/get-all'),
     ).takeUntil(this.unsubscribe).subscribe(res => {
       this.list_lop = res[0];
       setTimeout(() => {
         this.loadScripts();
       });
     }, err => { });
+    console.log(this.list_lop);
+  }
+
+  catText(text: string, limit: number): string {
+    if(text.length > limit) {
+      return text.substr(0, limit) + "...";
+    }
+    return text;
   }
 }
