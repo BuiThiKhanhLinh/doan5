@@ -211,10 +211,11 @@ Breadcrumb CSS
     overflow: hidden;
 }
 .breadcrumb_top{
-    background: url(img/bg_breadcrumb.jpg);
+    background: url(img/bg.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 300px;
 }
 .breadcrumb_title {
   margin-top: 123px;
@@ -224,7 +225,7 @@ Breadcrumb CSS
   color: #fff;
   font-family: "Libre Baskerville",serif;
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 300;
 }
 .breadcrumb_bottom{
     background: url(img/bg_breadcrumb_bottom.png);
@@ -366,7 +367,7 @@ Key To Success CSS
     background: url(img/bg_header_bottom.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 600px;
     margin-top: -123px;
 }
 .key_to_success{

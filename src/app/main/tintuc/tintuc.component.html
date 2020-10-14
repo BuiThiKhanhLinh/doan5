@@ -18,7 +18,7 @@
                           </div>
                           <div class="col-sm-7">
                               <ul>
-                                  <li><a href="index-2.html">Trang Chủ</a></li>
+                                  <li><a [routerLink]="['/']">Trang Chủ</a></li>
                                   <li>Tin Tức</li>
                               </ul>
                           </div>
@@ -42,7 +42,7 @@
                               <!-- <h2>Political Science</h2> -->
                               <h2>{{catText(it.tieuDe, 50)}}</h2>
                               <p>{{catText(it.noiDung, 140)}}</p>
-                              <a href="#">Chi Tiet <i class="fa fa-angle-right"></i></a>
+                               <a [routerLink]="['/ct-tintuc',it.maTin]">Chi Tiet <i class="fa fa-angle-right"></i></a>
                           </div>
                       </div>
                   </div>

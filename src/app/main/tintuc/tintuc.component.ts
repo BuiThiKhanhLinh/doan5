@@ -17,7 +17,7 @@ export class TintucComponent extends BaseComponent implements OnInit {
 
   ngOnInit(): void {
     Observable.combineLatest(
-      this._api.get('api/tintuc/get-all'),
+      this._api.get('api/tintuc/get-loai/1'),
     ).takeUntil(this.unsubscribe).subscribe(res => {
       this.list_lop = res[0];
       setTimeout(() => {

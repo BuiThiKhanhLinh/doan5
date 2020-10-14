@@ -10,7 +10,7 @@ import { TintucComponent } from './tintuc/tintuc.component';
 import { BlogComponent } from './blog/blog.component';
 import { CtblogComponent } from './ctblog/ctblog.component';
 import { CttintucComponent } from './cttintuc/cttintuc.component';
-import { VanbanComponent } from './vanban/vanban.component';
+import { VanBanComponent } from './vanban/vanban.component';
 import { TochucComponent } from './tochuc/tochuc.component';
 
 export const mainRoutes: Routes = [
@@ -33,14 +33,17 @@ export const mainRoutes: Routes = [
           path: 'ctblog', component: CtblogComponent
         },
         {
-          path: 'ct-tintuc', component: CttintucComponent
+          path: 'ct-tintuc/:id', component: CttintucComponent
+        },
+        {
+          path: 'vanban', component: VanBanComponent
         },
       ]
   }
 ];
 
 @NgModule({
-  declarations: [MainComponent, HomeComponent, HeaderComponent, FooterComponent, GioithieuComponent, TintucComponent, BlogComponent, CtblogComponent, CttintucComponent, VanbanComponent, TochucComponent],
+  declarations: [MainComponent, HomeComponent, HeaderComponent, FooterComponent, GioithieuComponent, TintucComponent, BlogComponent, CtblogComponent, CttintucComponent, VanBanComponent, TochucComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(mainRoutes)

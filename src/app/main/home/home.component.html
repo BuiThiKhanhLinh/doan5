@@ -8,8 +8,6 @@
                   <div class="key2seccess_txt">
                       <h2>Giáo dục là chìa khóa cho sự thành công của bạn!!</h2>
                       <p>Học vấn do người siêng năng đạt được, tài sản do người tinh tế sở hữu, quyền lợi do người dũng cảm nắm giữ, thiên đường do người lương thiện xây dựng. </p>
-                      <a href="#" class="rm_btn">Learn more</a>
-                      <a href="#" class="rm_btn">apply now</a>
                   </div>
               </div>
               <div class="col-md-5 hidden-sm hidden-xs">
@@ -23,35 +21,35 @@
 </section>
 
 <section class="our_courses_area section-padding">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="section_heading">
-                  <h1>TIN TỨC NỔI BẬT</h1>
-                  <p>Cập nhật thông tin mới nhất!</p>
-              </div>
-          </div>
-      </div>
-      <div class="row all_our_courses">
-        <ng-container *ngFor="let it of list_lop">
-            <div class="col-md-4 col-sm-6">
-                <div class="single_our_course">
-                    <div class="sing_course_thumb">
-                        <img src="assets/img/{{it.hinhAnh}}" alt="">
-                    </div>
-                    <div class="sing_course_txt">
-                        <img src="assets/img/" alt="" class="course_icon">
-                        <!-- <h2>Political Science</h2> -->
-                        <h2>{{catText(it.tieuDe, 50)}}</h2>
-                        <p>{{catText(it.noiDung, 140)}}</p>
-                        <a href="#">Chi Tiet <i class="fa fa-angle-right"></i></a>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_heading">
+                    <h1>TIN TỨC NỔI BẬT</h1>
+                    <p>Cập nhật thông tin mới nhất!</p>
                 </div>
             </div>
-          </ng-container>
-      </div>
-  </div>
-</section>
+        </div>
+        <div class="row all_our_courses">
+            <ng-container *ngFor="let it of list_lop">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single_our_course">
+                        <div class="sing_course_thumb">
+                            <img src="assets/img/{{it.hinhAnh}}" alt="">
+                        </div>
+                        <div class="sing_course_txt">
+                            <img src="assets/img/" alt="" class="course_icon">
+                            <!-- <h2>Political Science</h2> -->
+                            <h2>{{catText(it.tieuDe, 50)}}</h2>
+                            <p>{{catText(it.noiDung, 140)}}</p>
+                             <a [routerLink]="['/ct-tintuc',it.maTin]">Chi Tiet <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+              </ng-container>
+        </div>
+    </div>
+  </section>
 
 <section class="search_courses_area section-padding">
   <div class="container">
@@ -204,99 +202,4 @@
   </div>
 </section>
 
-<section class="our_faculties_area section-padding">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="section_heading">
-                  <h1>Đội Ngũ Giáo Viên</h1>
-                  <p>Đội ngũ giáo viên giàu kinh nghiệm</p>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="all_our_faculties">
-              <div class="col-md-3 col-sm-6">
-                  <div class="single_our_facult">
-                      <div class="sing_our_facult_photo">
-                          <img src="assets/img/our_faculties_1.jpg" alt="">
-                      </div>
-                      <div class="sing_our_facult_txt">
-                          <h3>John Vettori</h3>
-                          <p>Founder & Principle</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="single_our_facult">
-                      <div class="sing_our_facult_photo">
-                          <img src="assets/img/our_faculties_2.jpg" alt="">
-                      </div>
-                      <div class="sing_our_facult_txt">
-                          <h3>Lucy martin</h3>
-                          <p>Vice Principle</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="single_our_facult">
-                      <div class="sing_our_facult_photo">
-                          <img src="assets/img/our_faculties_3.jpg" alt="">
-                      </div>
-                      <div class="sing_our_facult_txt">
-                          <h3>Chris evans</h3>
-                          <p>Mathematics Professor</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="single_our_facult">
-                      <div class="sing_our_facult_photo">
-                          <img src="assets/img/our_faculties_4.jpg" alt="">
-                      </div>
-                      <div class="sing_our_facult_txt">
-                          <h3>Lucy martin</h3>
-                          <p>Biology Professor</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
 
-
-<section class="our_partners section-padding">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              <div class="section_heading">
-                  <h1>Nhà Tài Trợ và Đối Tác Với Trường</h1>
-                  <!-- <p>Check our partners</p> -->
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="all_partners">
-              <div class="single_partner">
-                  <a href="#"><img src="assets/img/partners_logo_1.jpg" alt=""></a>
-              </div>
-              <div class="single_partner">
-                  <a href="#"><img src="assets/img/partners_logo_2.jpg" alt=""></a>
-              </div>
-              <div class="single_partner">
-                  <a href="#"><img src="assets/img/partners_logo_3.jpg" alt=""></a>
-              </div>
-              <div class="single_partner">
-                  <a href="#"><img src="assets/img/partners_logo_4.jpg" alt=""></a>
-              </div>
-              <div class="single_partner">
-                  <a href="#"><img src="assets/img/partners_logo_5.jpg" alt=""></a>
-              </div>
-              <div class="single_partner">
-                  <a href="#"><img src="assets/img/partners_logo_6.jpg" alt=""></a>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
