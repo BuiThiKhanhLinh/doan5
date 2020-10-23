@@ -5,7 +5,7 @@
           <div class="container">
               <div class="row">
                   <div class="breadcrumb_title section-padding">
-                      <h2>Single Post</h2>
+                      <h2>DIỄN ĐÀN</h2>
                   </div>
               </div>
           </div>
@@ -15,12 +15,12 @@
               <div class="row">
                   <div class="breadcrumb_nav">
                       <div class="col-sm-5">
-                          <h2>Single Post</h2>
+                          <h2>Bài Viết</h2>
                       </div>
                       <div class="col-sm-7">
                           <ul>
-                              <li><a href="index-2.html">Home</a></li>
-                              <li>Single Post</li>
+                              <li><a href="index-2.html">Trang Chủ</a></li>
+                              <li>Bài Viết</li>
                           </ul>
                       </div>
                   </div>
@@ -35,21 +35,18 @@
               <div class="col-md-8">
                   <div class="single_blog_post_box">
                       <div class="blog_post_photo">
-                          <img src="assets/img/latest_news_post_1.jpg" alt="">
+                          <img src="assets/img/{{item.hinhAnh}}" alt="">
                           <div class="blog_post_date_caption">
-                              <span>08 Apr</span>
+                              <span>{{item.thoiGian}}</span>
                           </div>
                       </div>
                       <div class="blog_post_txt">
                           <div class="blog_post_heading">
-                              <h2><a href="single-post.html">your way in the world today takes everything you've got</a></h2>
-                              <p>Posted By : Admin</p>
+                              <h2><a href="single-post.html">{{item.tieuDe}}</a></h2>
+                              <p>{{item.maTK}}</p>
                           </div>
                           <div class="blog_post_content">
-                              <p>Buck Rogers to Earth five-hundred years later. Now were up in the big leagues getting' our turn at bat. The movie star the professor and Mary Ann here on Gilligans Isle. So get a witch's shawl on a broomstick you can crawl on. Were gonna pay a call on the Addams Family." The mate was a mighty sailin' man the Skipper brave and sure. </p>
-                              <p>We finally got a piece of the pie. You wanna be where you can see our troubles are all the same. You wanna be where everybody knows Your name. Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. And we'll do it our way yes our way. Make all our dreams come true for me and you., Straightnin' the curves. Flatnin' the hills Someday the mountain might get ‘em but the law never will.</p>
-                              <blockquote>Maecenas interdum tortor quis rhoncus imperdiet. Vestib ulvulputate lacus vitae ligula aliquet mattis uspendisse convallis pulvinar velit, at sodales libero tempus vitae. Etiam dapib</blockquote>
-                              <p> Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. That this group would somehow form a family that's the way we all became the Brady Bunch. Well the first thing you know ol' Jeds a millionaire. Kinfolk said Jed move away from there</p>
+                              <p>{{item.noiDung}}</p>
                           </div>
                           <div class="blog_post_footer">
                               <ul>
@@ -57,27 +54,6 @@
                                   <li><i class="pe-7s-like"></i>13 Likes</li>
                                   <li><i class="pe-7s-look"></i>19 Viewers</li>
                                   <li class="blog_post_footer_right_item"><i class="pe-7s-ticket"></i>University, courses, college</li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="single_post_author_area">
-                      <div class="col-md-3">
-                          <div class="author_photo">
-                              <img src="assets/img/author_photo.jpg" alt="">
-                          </div>
-                      </div>
-                      <div class="col-md-9 fix_p_l">
-                          <div class="author_details">
-                              <h2>Faf Maxwell</h2>
-                              <p>He's a demon on wheels. Here's the story of a man named Brady who was busy with three boys of his own. Texas tea. Maybe you and me were never meant to be. But baby think of me once in awhile. I'm at WKRP in Cincinnati.</p>
-                              <ul>
-                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
                               </ul>
                           </div>
                       </div>
@@ -134,29 +110,7 @@
                               </div>
                           </li>
                       </ul>
-                      <div class="comment_form">
-                          <h2>Leave A Comment</h2>
-                          <form action="https://premiumlayers.net/demo/html/educampus/single-post.html">
-                              <div class="row">
-                                  <div class="col-md-6 fix_p_r">
-                                      <input type="text" placeholder="Your Name *" >
-                                  </div>
-                                  <div class="col-md-6 fix_p_r">
-                                      <input type="text" placeholder="Your E-Mail *" >
-                                  </div>
-                                  <div class="col-md-6 fix_p_r">
-                                      <input type="text" placeholder="Phone" >
-                                  </div>
-                                  <div class="col-md-6 fix_p_r">
-                                      <input type="text" placeholder="Subject" >
-                                  </div>
-                                  <div class="col-md-12 fix_p_r">
-                                      <textarea name="" cols="30" rows="10" placeholder="Message"></textarea>
-                                      <input type="submit" value="Post Comment">
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
+
                   </div>
               </div>
               <div class="col-md-4 col-sm-7">
@@ -199,47 +153,7 @@
                                       </ul>
                                   </div>
                               </div>
-                              <div class="sing_right_widget">
-                                  <h2>Connect With Us</h2>
-                                  <div class="sing_right_widg_content">
-                                      <div class="social_share_logo_right fix_m_r">
-                                          <div class="col-md-4 col-sm-4 fix_p_l">
-                                              <div class="single_social_share">
-                                                  <a href="#"><i class="fa fa-facebook"></i></a>
-                                                  <span class="counter">5169</span>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-4 col-sm-4 fix_p_l">
-                                              <div class="single_social_share">
-                                                  <a href="#"><i class="fa fa-twitter"></i></a>
-                                                  <span class="counter">3210</span>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-4 col-sm-4 fix_p_l">
-                                              <div class="single_social_share">
-                                                  <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                  <span class="counter">2012</span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="sing_right_widget">
-                                  <h2>Popular Tags</h2>
-                                  <div class="sing_right_widg_content">
-                                      <ul class="popular_tag_right">
-                                          <li><a href="#">Amazing</a></li>
-                                          <li><a href="#">Clean</a></li>
-                                          <li><a href="#">Multipurpose</a></li>
-                                          <li><a href="#">Envato</a></li>
-                                          <li><a href="#">Responsiveness</a></li>
-                                          <li><a href="#">IOS</a></li>
-                                          <li><a href="#">Creative</a></li>
-                                          <li><a href="#">Twitter</a></li>
-                                          <li><a href="#">Wordpress</a></li>
-                                      </ul>
-                                  </div>
-                              </div>
+
                           </div>
                       </div>
                   </aside>

@@ -30,7 +30,7 @@ export const mainRoutes: Routes = [
           path: 'blog', component: BlogComponent
         },
         {
-          path: 'ctblog', component: CtblogComponent
+          path: 'ctblog/:id', component: CtblogComponent
         },
         {
           path: 'ct-tintuc/:id', component: CttintucComponent
