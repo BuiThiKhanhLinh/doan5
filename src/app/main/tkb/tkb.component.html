@@ -1,0 +1,66 @@
+
+
+        <section class="breadcrumb_area">
+            <div class="breadcrumb_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="breadcrumb_title section-padding">
+                            <h2>THỜI KHÓA BIỂU</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumb_bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="breadcrumb_nav">
+                            <div class="col-sm-5">
+                                <h2>THỜI KHÓA BIỂU</h2>
+                            </div>
+                            <div class="col-sm-7">
+                                <ul>
+                                    <li><a [routerLink]="['/']">Trang Chủ</a></li>
+                                    <li>THỜI KHÓA BIỂU</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <br>
+            <h2>DANH SÁCH LỚP HỌC</h2>
+            <p>Thời khóa biểu chính khóa buổi sáng và buổi chiều cho các lớp</p>            
+            <table class="cls-tblTKB text-center" border="1" cellspacing="1" width="660" bordercolor="#000000">
+                <tbody>
+                    <tr>
+                        <td width="330" colspan="3" >Buổi sáng</td>
+                        <td width="330" colspan="3" >Buổi chiều</td>
+                    </tr>
+                    <tr>
+                        <td width="30"  ><font face="Times New Roman" size="3">STT</font></td>
+                        <td width="100"  ><font face="Times New Roman" size="3">Tên lớp</font></td>
+                        <td width="100"  ><font face="Times New Roman" size="3">Số học sinh</font></td>
+                        <td width="30"  ><font face="Times New Roman" size="3">STT</font></td>
+                        <td width="100"  ><font face="Times New Roman" size="3">Tên lớp</font></td>
+                        <td width="100"  ><font face="Times New Roman" size="3">Số học sinh</font></td>
+                    </tr>
+                    <ng-container *ngFor="let it of list_lop, let i = index">
+                    <tr>
+                        <td width="30"><font face="Times New Roman" size="3">{{i+1}}</font></td>
+                        <td width="100"><font face="Tahoma" size="2"><a href="tkb_class_1_0.html">{{it.tenLop}}</a></font></td>
+                        <td width="100" ><font face="Times New Roman" size="3">{{it.siSo}}</font></td>
+                        <td width="30"><font face="Times New Roman" size="3">{{i+1}}</font></td>
+                        <td width="100"><font face="Tahoma" size="2"><a href="tkb_class_1_1.html">{{it.tenLop}}</a></font></td>
+                        <td width="100" ><font face="Times New Roman" size="3">{{it.siSo}}</font></td>
+                    </tr>
+                    </ng-container>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+          

@@ -33,12 +33,12 @@
       <div class="container">
           <div class="row">
             <ng-container *ngFor="let it of list_blog">
-              <div class="col-md-8">
+              <div class="col-md-8" style="padding: 6px !important;">
                   <div class="single_blog_post_box">
                       <div class="blog_post_photo">
                           <img src="assets/img/{{it.hinhAnh}}" alt="">
                           <div class="blog_post_date_caption">
-                              <span>{{catText(it.thoiGian)}}</span>
+                              <span>{{it.thoiGian | date: 'dd/MM'}}</span>
                           </div>
                       </div>
                       <div class="blog_post_txt">
