@@ -31,7 +31,9 @@
         <div class="container">
             <br>
             <h2>DANH SÁCH LỚP HỌC</h2>
-            <p>Thời khóa biểu chính khóa buổi sáng và buổi chiều cho các lớp</p>            
+            <p>Thời khóa biểu chính khóa buổi sáng và buổi chiều cho các lớp</p>  
+            <p>- Buổi sáng: Tiết 1 từ 7h15' <br>
+                - Buổi chiều: Tiết 1 từ 13h00' </p>          
             <table class="cls-tblTKB text-center" border="1" cellspacing="1" width="660" bordercolor="#000000">
                 <tbody>
                     <tr>
@@ -49,10 +51,10 @@
                     <ng-container *ngFor="let it of list_lop, let i = index">
                     <tr>
                         <td width="30"><font face="Times New Roman" size="3">{{i+1}}</font></td>
-                        <td width="100"><font face="Tahoma" size="2"><a href="tkb_class_1_0.html">{{it.tenLop}}</a></font></td>
+                        <td width="100"><font face="Tahoma" size="2"><a [routerLink]="['/ct-tkb']">{{it.tenLop}}</a></font></td>
                         <td width="100" ><font face="Times New Roman" size="3">{{it.siSo}}</font></td>
                         <td width="30"><font face="Times New Roman" size="3">{{i+1}}</font></td>
-                        <td width="100"><font face="Tahoma" size="2"><a href="tkb_class_1_1.html">{{it.tenLop}}</a></font></td>
+                        <td width="100"><font face="Tahoma" size="2"><a [routerLink]="['/ct-tkb']">{{it.tenLop}}</a></font></td>
                         <td width="100" ><font face="Times New Roman" size="3">{{it.siSo}}</font></td>
                     </tr>
                     </ng-container>

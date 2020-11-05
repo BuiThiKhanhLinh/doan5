@@ -43,6 +43,9 @@ export const mainRoutes: Routes = [
         {
           path: 'tkb', component: TkbComponent
         },
+        {
+          path: 'ct-tkb', component: CtTkbComponent 
+        },
       ]
   }
 ];
