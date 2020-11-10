@@ -1,6 +1,4 @@
-
-
-  <section class="breadcrumb_area">
+<section class="breadcrumb_area">
       <div class="breadcrumb_top">
           <div class="container">
               <div class="row">
@@ -28,17 +26,16 @@
           </div>
       </div>
   </section>
-
   <section class="latest_news_area section-padding">
       <div class="container">
           <div class="row">
             <ng-container *ngFor="let it of list_blog">
-              <div class="col-md-8" style="padding: 6px !important;">
+              <div class="col-md-12" style="padding: 6px !important;">
                   <div class="single_blog_post_box">
                       <div class="blog_post_photo">
                           <img src="assets/img/{{it.hinhAnh}}" alt="">
                           <div class="blog_post_date_caption">
-                              <span>{{it.thoiGian | date: 'dd/MM'}}</span>
+                              <span>{{it.thoiGian }}</span>
                           </div>
                       </div>
                       <div class="blog_post_txt">
@@ -58,51 +55,7 @@
                   </div>
               </div>
             </ng-container>
-              <div class="col-md-4 col-sm-7">
-                  <aside>
-                      <div class="right_sidebar">
-                          <div class="all_right_widgets">
-                              <div class="sing_right_widget">
-                                  <div class="sing_right_widg_content">
-                                      <form action="#">
-                                          <input type="text" placeholder="Search">
-                                          <input type="submit" value="">
-                                      </form>
-                                  </div>
-                              </div>
-                              <div class="sing_right_widget">
-                                  <h2>Latest News</h2>
-                                  <div class="sing_right_widg_content">
-                                      <ul class="lat_news_right">
-                                          <li>
-                                              <img src="assets/img/right_lat_news_1.jpg" alt="">
-                                              <div class="lat_news_right_con">
-                                                  <h3><a href="single-post.html">Mister we could use a man like Herbert</a></h3>
-                                                  <h4>April 19, 2015</h4>
-                                              </div>
-                                          </li>
-                                          <li>
-                                              <img src="assets/img/right_lat_news_2.jpg" alt="">
-                                              <div class="lat_news_right_con">
-                                                  <h3><a href="single-post.html">e know Flipper lives in a world full of wonder</a></h3>
-                                                  <h4>April 12, 2015</h4>
-                                              </div>
-                                          </li>
-                                          <li>
-                                              <img src="assets/img/right_lat_news_3.jpg" alt="">
-                                              <div class="lat_news_right_con">
-                                                  <h3><a href="single-post.html">very best to make the others comfortable</a></h3>
-                                                  <h4>April 12, 2015</h4>
-                                              </div>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </aside>
-              </div>
-          </div>
-      </div>
+        </div>
+    </div>
   </section>
 

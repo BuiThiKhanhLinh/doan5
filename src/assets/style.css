@@ -85,7 +85,7 @@ p{
     font-size: 15px;
 }
 html, body {
-    height: 100%;
+    /* height: 100%; */
     font-family: 'LatoMedium', sans-serif;
 }
 body {  }
@@ -149,7 +149,7 @@ ul.nav.navbar-nav li > a:hover, ul.nav.navbar-nav li.current_page_item a{
     color: #fff;
 }
 ul.nav.navbar-nav li.current_page_item a, ul.nav.navbar-nav li:hover > a {
-    background-color: #ff3d00;
+    background-color:#BB0000;
 }
 a.rm_btn{
     border: 1px solid;
@@ -215,31 +215,31 @@ Breadcrumb CSS
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 300px;
+    height: 400px;
 }
 .breadcrumb_title {
   margin-top: 123px;
   text-align: center;
 }
 .breadcrumb_title h2{
-  color: #fff;
+  color: #ffffff ;
   font-family: "Libre Baskerville",serif;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 300;
 }
 .breadcrumb_bottom{
-    background: url(img/bg_breadcrumb_bottom.png);
-    background-color: #ff3d00;
+    /* background: url(img/bg_breadcrumb_bottom.png); */
+    background-color: #3b59a1;
     background-attachment: fixed;
 }
 .breadcrumb_nav{
-    color: #fff;
+    color: #efefef;
     overflow: hidden;
 }
 .breadcrumb_nav h2{
     line-height: 70px;
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Libre Baskerville",serif;
     font-weight: 700;
 }
@@ -256,13 +256,13 @@ Breadcrumb CSS
   margin: 0 15px;
 }
 .breadcrumb_nav ul li a{
-    color: #fff;
+    color: #efefef;
     position: relative;
 }
 .breadcrumb_nav ul li a::after {
   content: "\f105";
   font-family: 'fontawesome';
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   right: -18px;
   top: -23px;
@@ -281,7 +281,7 @@ Header CSS
     border-bottom: 3px solid #e4e4e4;
     font-family: 'Libre Baskerville', serif;
     position: relative;
-    z-index: 9;
+    z-index: 5;
 }
 .logo {
   padding-left: 30px;
@@ -323,7 +323,7 @@ ul.nav.navbar-nav > li > a:after{
 ul.nav.navbar-nav li > a:hover:after, ul.nav.navbar-nav li.current_page_item a:after{
     opacity: 1;
 }
-.header_search{
+/* .header_search{
     position: absolute;
     right: 15px;
     top: 0;
@@ -357,7 +357,7 @@ ul.nav.navbar-nav li > a:hover:after, ul.nav.navbar-nav li.current_page_item a:a
 }
 .header_search input[type="submit"]{
     display: none;
-}
+} */
 
 
 /* --------------------------------------------------------
@@ -1136,8 +1136,8 @@ Latest From Our Blog CSS
     position: absolute;
     top: 0;
     right: 0;
-    width: 67px;
-    height: 67px;
+    width: 200px;
+    height: 50px;
     background: #ff3d00;
     padding: 5px;
     text-align: center;
