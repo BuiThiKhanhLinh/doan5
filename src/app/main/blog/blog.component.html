@@ -17,7 +17,7 @@
                       </div>
                       <div class="col-sm-7">
                           <ul>
-                              <li><a href="index-2.html">Trang Chủ</a></li>
+                              <li><a [routerLink]="['/']">Trang Chủ</a></li>
                               <li>Bài Viết Mới</li>
                           </ul>
                       </div>
@@ -35,7 +35,7 @@
                       <div class="blog_post_photo">
                           <img src="assets/img/{{it.hinhAnh}}" alt="">
                           <div class="blog_post_date_caption">
-                              <span>{{it.thoiGian }}</span>
+                              <span>{{it.thoiGian | date:'dd-MM-yyyy' }} </span>
                           </div>
                       </div>
                       <div class="blog_post_txt">

@@ -37,7 +37,7 @@
                       <div class="blog_post_photo">
                           <img src="assets/img/{{item.hinhAnh}}" alt="">
                           <div class="blog_post_date_caption">
-                              <span>{{item.thoiGian}}</span>
+                              <span>{{item.thoiGian| date:'dd-MM-yyyy'}}</span>
                           </div>
                       </div>
                       <div class="blog_post_txt">
@@ -110,7 +110,17 @@
                               </div>
                           </li>
                       </ul>
-
+                      <div class="comment_form">
+                        <h2>BÌNH LUẬN </h2>
+                        <form action="https://premiumlayers.net/demo/html/educampus/single-post.html">
+                            <div class="row">
+                                <div class="col-md-12 fix_p_r">
+                                    <textarea name="" cols="30" rows="10" placeholder="Message"></textarea>
+                                    <input type="submit" value="Bình luận">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                   </div>
               </div>
               <div class="col-md-4 col-sm-7">

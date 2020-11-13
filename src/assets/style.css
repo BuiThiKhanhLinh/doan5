@@ -562,10 +562,13 @@ Latest Courses CSS
     border: 1px solid #ececec;
     background: #fff;
     border-radius: 7px;
+    height:600px ;
 }
 .sing_lat_course_photo > img {
       border-top-left-radius: 7px;
       border-top-right-radius: 7px;
+      width: 200px;
+      height: 290px;
 }
 .sing_lat_course_txt{
     padding: 20px 20px 30px;

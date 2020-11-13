@@ -26,11 +26,11 @@ export class TintucComponent extends BaseComponent implements OnInit {
     }, err => { });
     console.log(this.list_lop);
   }
-
   catText(text: string, limit: number): string {
     if(text.length > limit) {
       return text.substr(0, limit) + "...";
     }
     return text;
   }
+  
 }

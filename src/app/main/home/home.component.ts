@@ -11,6 +11,7 @@ import 'rxjs/add/operator/takeUntil';
 })
 export class HomeComponent extends BaseComponent implements OnInit {
   list_lop:any;
+  public tintucs:any;
   constructor(injector: Injector) { 
     super(injector);}
 
@@ -23,6 +24,15 @@ export class HomeComponent extends BaseComponent implements OnInit {
         this.loadScripts();
       });
     }, err => { });
+    Observable.combineLatest(
+      this._api.get('api/tintuc/get-all'),
+    ).takeUntil(this.unsubscribe).subscribe(res => {
+      this.tintucs = res[0];
+      setTimeout(() => {
+        this.loadScripts();
+      });
+    }, err => { });
+    console.log(this.tintucs);
     console.log(this.list_lop);
   }
 
