@@ -36,9 +36,9 @@
             <p>- Buổi sáng: Tiết 1 từ 7h15' <br>
                 - Buổi chiều: Tiết 1 từ 13h00' </p> 
                 <h2 style="text-align: center;">THỜI KHÓA BIỂU</h2>                   
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
+                    <table class="table table-bordered text-center">
+                      <thead >
+                        <tr style="text-align: center !important;">
                           <th>TIẾT</th>
                           <th>Thứ 2</th>
                           <th>Thứ 3</th>
@@ -49,14 +49,13 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>John</td>
-                          <td>Doe</td>
-                          <td>John</td>
-                          <td>John</td>
-                          <td>Doe</td>
-                          <td>John</td>
-                          <td>John</td>
+                        <tr *ngFor="let t of tiets">
+                          <td>{{t}}</td>
+                          <ng-container *ngFor="let mon of list_tkb">
+                            <ng-container *ngIf="mon.tietDay== t">
+                                <td>{{mon.tenMon}}</td>
+                            </ng-container>
+                          </ng-container>
                         </tr>
                       </tbody>
                     </table>

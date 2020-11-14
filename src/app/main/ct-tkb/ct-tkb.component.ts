@@ -10,20 +10,22 @@ import 'rxjs/add/operator/takeUntil';
   styleUrls: ['./ct-tkb.component.css']
 })
 export class CtTkbComponent extends BaseComponent implements OnInit {
-  list_tkb:any;
+  public list_tkb:any;
+  public tiets=['1', '2', '3', '4', '5']
   constructor(injector: Injector) { 
     super(injector);
   }
   ngOnInit(): void {
     Observable.combineLatest(
-      this._api.get('api/tkb/get-all'),
+      this._api.get('api/tkb/get-by-lop/10A1'),
     ).takeUntil(this.unsubscribe).subscribe(res => {
       this.list_tkb = res[0];
+      console.log(this.list_tkb);
       setTimeout(() => {
         this.loadScripts();
       });
     }, err => { });
-    console.log(this.list_tkb);
+   
   }
 
   catText(text: string, limit: number): string {

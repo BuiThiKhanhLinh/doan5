@@ -41,7 +41,7 @@
                       <div class="blog_post_heading">
                           <h2><a href="">{{item.tieuDe}}</a></h2>
                           <p>Posted By : Admin</p><br>
-                          <p>{{item.thoiGian}}</p>
+                          <p>{{item.thoiGian| date:'dd-MM-yyyy' }}</p>
                       </div>
                       <div class="blog_post_content">
                         {{item.noiDung}}
