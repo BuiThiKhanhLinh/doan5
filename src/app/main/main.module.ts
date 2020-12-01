@@ -14,6 +14,8 @@ import { VanBanComponent } from './vanban/vanban.component';
 import { TochucComponent } from './tochuc/tochuc.component';
 import { TkbComponent } from './tkb/tkb.component';
 import { CtTkbComponent } from './ct-tkb/ct-tkb.component';
+import { LoginComponent } from './login/login.component';
+import { DangkyComponent } from './dangky/dangky.component';
 
 export const mainRoutes: Routes = [
   {
@@ -49,12 +51,15 @@ export const mainRoutes: Routes = [
         {
           path: 'tochuc', component: TochucComponent
         },
+        {
+          path: 'login', component: LoginComponent 
+        },
       ]
   }
 ];
 
 @NgModule({
-  declarations: [MainComponent, HomeComponent, HeaderComponent, FooterComponent, GioithieuComponent, TintucComponent, BlogComponent, CtblogComponent, CttintucComponent, VanBanComponent, TochucComponent, TkbComponent, CtTkbComponent],
+  declarations: [MainComponent, HomeComponent, HeaderComponent, FooterComponent, GioithieuComponent, TintucComponent, BlogComponent, CtblogComponent, CttintucComponent, VanBanComponent, TochucComponent, TkbComponent, CtTkbComponent, LoginComponent, DangkyComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(mainRoutes)
