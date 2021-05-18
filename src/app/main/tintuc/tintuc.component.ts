@@ -11,20 +11,32 @@ import 'rxjs/add/operator/takeUntil';
 })
 export class TintucComponent extends BaseComponent implements OnInit {
   list_lop:any;
+  public tintucs:any;
+  public totalRecords: any;
+  public pageSize = 6;
+  public page = 1;
   constructor(injector: Injector) { 
     super(injector);
   }
 
   ngOnInit(): void {
-    Observable.combineLatest(
-      this._api.get('api/tintuc/get-loai/1'),
-    ).takeUntil(this.unsubscribe).subscribe(res => {
-      this.list_lop = res[0];
-      setTimeout(() => {
-        this.loadScripts();
+    this.search();
+  }
+  loadPage(page) { 
+    this._api.post('api/tintuc/search',{page: page, pageSize: this.pageSize}).takeUntil(this.unsubscribe).subscribe(res => {
+      this.tintucs = res.data;
+      this.totalRecords =  res.totalItems;
+      this.pageSize = res.pageSize;
       });
-    }, err => { });
-    console.log(this.list_lop);
+  } 
+  search() { 
+    this.page = 1;
+    this.pageSize = 6;
+    this._api.post('api/tintuc/search',{page: this.page, pageSize: this.pageSize}).takeUntil(this.unsubscribe).subscribe(res => {
+      this.tintucs = res.data;
+      this.totalRecords =  res.totalItems;
+      this.pageSize = res.pageSize;
+      });
   }
   catText(text: string, limit: number): string {
     if(text.length > limit) {

@@ -16,6 +16,8 @@ import { TkbComponent } from './tkb/tkb.component';
 import { CtTkbComponent } from './ct-tkb/ct-tkb.component';
 import { LoginComponent } from './login/login.component';
 import { DangkyComponent } from './dangky/dangky.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap' ;
 
 export const mainRoutes: Routes = [
   {
@@ -46,13 +48,16 @@ export const mainRoutes: Routes = [
           path: 'tkb', component: TkbComponent
         },
         {
-          path: 'ct-tkb', component: CtTkbComponent 
+          path: 'ct-tkb/:id', component: CtTkbComponent 
         },
         {
           path: 'tochuc', component: TochucComponent
         },
         {
           path: 'login', component: LoginComponent 
+        },
+        {
+          path: 'dangky', component: DangkyComponent 
         },
       ]
   }
@@ -62,6 +67,9 @@ export const mainRoutes: Routes = [
   declarations: [MainComponent, HomeComponent, HeaderComponent, FooterComponent, GioithieuComponent, TintucComponent, BlogComponent, CtblogComponent, CttintucComponent, VanBanComponent, TochucComponent, TkbComponent, CtTkbComponent, LoginComponent, DangkyComponent],
   imports: [
     CommonModule,
+    FormsModule,
+    NgbModule,
+    ReactiveFormsModule,
     RouterModule.forChild(mainRoutes)
   ]
 })

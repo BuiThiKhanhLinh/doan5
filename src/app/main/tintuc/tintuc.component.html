@@ -27,11 +27,10 @@
               </div>
           </div>
       </section>
-
       <section class="our_courses_area section-padding course-page">
           <div class="container">
               <div class="row all_our_courses">
-                <ng-container *ngFor="let it of list_lop">
+                <ng-container *ngFor="let it of tintucs">
                   <div class="col-md-4 col-sm-6">
                       <div class="single_our_course">
                           <div class="sing_course_thumb">
@@ -39,7 +38,6 @@
                           </div>
                           <div class="sing_course_txt">
                               <img src="assets/img/" alt="" class="course_icon">
-                              <!-- <h2>Political Science</h2> -->
                               <h2>{{catText(it.tieuDe, 50)}}</h2>
                               <p>{{catText(it.noiDung, 140)}}</p>
                                <a [routerLink]="['/ct-tintuc',it.maTin]">Chi Tiet <i class="fa fa-angle-right"></i></a>
@@ -49,8 +47,8 @@
                 </ng-container>
               </div>
               <div class="row">
-                  <div class="view_all_course">
-                      <a href="#" class="rm_btn">view all courses</a>
+                  <div class="col-xs-12" style="text-align: center;">
+                    <ngb-pagination [collectionSize]="totalRecords" [pageSize]="pageSize" [(page)]="page" [maxSize]="10" [rotate]="true" (pageChange)="loadPage($event)"></ngb-pagination>
                   </div>
               </div>
           </div>
